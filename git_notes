@@ -1,0 +1,26 @@
+## Notes on Git
+
+#### Git Instructions
+* `git init` starts a new repository.  
+* `git add file.txt` is to add _file.txt_ to Git to track changes by adding them to the **Staging Area**.   
+* `git commit` to save your changes. (_i.e._ commit to adding a file from the staging area to the repository)
+* `git status` tells you the current state of your repository.  
+* `git add '*.txt'` to add multiple things to the staging area with a wildcard (*) designation. 
+* `git log` gives a history of all changes.
+* `git remote add remotename https://github.com/url/repositoryURL.git` to add the remote repository designed with the URL.
+* `git push -u remotename localbranch` lets you push your local changes to the local branch named _localbranch_ in the remote repository named _remotename_. 
+	* the `-u` option tells Git to remember the parameters so you can just run `git push` next time to do the same thing over and over.
+* `git pull remotename localbranch` updates your local repository with whatever is in the local branch _localbranch_ in the remote repository _remotename_. 
+* `git diff HEAD` tells you the different changes. The `HEAD` option specifics you want the most recent change.
+* `git diff --staged` tells you what differences are in the stage
+* `git reset family/file.txt` resets the fact that you staged _file.txt_ to the family folder.
+* `git checkout -- file.txt` resets _file.txt_ to the last committed state.
+* `git branch newbranch` copies the master branch and makes a new branch named _newbranch_
+* `git branch newbranch` changes your current branch to _newbranch_. 
+*  `git merge newbranch` will merge _newbranch_ with your current branch.
+* `git branch -d newbranch` will delete the _newbranch_ branch.
+***
+####Notes on Options
+* If you want to save your changes, you want to commit your changes using `git commit -m "message"` command. 
+	* this means that you want to commit whatever changes you made. with the `-m` option, you can add a note with a message.
+
